@@ -1,0 +1,14 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "some code",
+  "main": "index.js",
+  "scripts": {
+    "test-promise": "promises-aplus-tests ./code/promise"
+  },
+  "author": "Jhaidi",
+  "license": "ISC",
+  "devDependencies": {
+    "promises-aplus-tests": "^2.1.2"
+  }
+}
