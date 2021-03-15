@@ -21,9 +21,7 @@ Event.prototype.trigger = function () {
   const fns = this.content[key]
   if (!fns || fns.length === 0) return
 
-  fns.forEach(fn => {
-    fn.call(this, arguments)
-  })
+  fns.forEach(fn =>  fn.apply(this, arguments))
 }
 
 Event.prototype.remove = function(eventType, fn) {

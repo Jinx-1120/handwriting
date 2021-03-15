@@ -23,10 +23,10 @@ function debounce(fn, delay, immediate = false) {
       timer = setTimeout(function() {
         timer = null
       }, delay)
-      if (runNow) result = fn.call(context, args)
+      if (runNow) result = fn.apply(context, args)
     } else {
       timer = setTimeout(function() {
-        fn.call(context, args)
+        fn.apply(context, args)
       }, delay)
     }
     return result
